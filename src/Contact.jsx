@@ -9,7 +9,6 @@ function Contact() {
       </div>
 
       <div className="row justify-content-center">
-        {/* Informasi Kontak */}
         <div className="col-md-4 mb-4">
           <div className="p-4 rounded-4 shadow-sm bg-success text-white h-100 border-0">
             <h4 className="fw-bold mb-4">Posko Buah</h4>
@@ -32,7 +31,6 @@ function Contact() {
           </div>
         </div>
 
-        {/* Formulir Bantuan */}
         <div className="col-md-7 mb-4">
           <div className="p-4 border-0 rounded-4 shadow-sm bg-light h-100">
             <form>
@@ -46,11 +44,11 @@ function Contact() {
               </div>
               <div className="mb-3">
                 <label className="form-label fw-bold">Kategori Kendala</label>
-                <select className="form-select rounded-pill">
-                  <option>Pilih jenis bantuan...</option>
-                  <option>Pembayaran Tiket Gagal</option>
-                  <option>Info Jadwal Hindia / Perunggu</option>
-                  <option>Refund Tiket</option>
+                <select className="form-select rounded-pill" defaultValue="">
+                  <option value="" disabled>Pilih jenis bantuan...</option>
+                  <option value="Pembayaran">Pembayaran Tiket Gagal</option>
+                  <option value="Info">Info Jadwal Hindia / Perunggu</option>
+                  <option value="Refund">Refund Tiket</option>
                 </select>
               </div>
               <div className="mb-3">
